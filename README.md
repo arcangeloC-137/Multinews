@@ -1,0 +1,2 @@
+# multi_document_news_highlights_extractor
+Deep NLP project
