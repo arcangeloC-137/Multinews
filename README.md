@@ -64,5 +64,5 @@ The LED model, which is an extension of the Longformer, was employed to create a
  Please, for further information, and to see our results, refere to the relative [`paper`](https://github.com/arcangeloC-137/Multinews/blob/main/Multi-document%20Summarization%20for%20News%20Articles%20Highlights%20Extraction.pdf).
  
  ----
- 
+  
  Authors: [`Matteo Berta`](https://github.com/MatteoBerta), [`Arcangelo Frigiola`](https://github.com/arcangeloC-137), [`Francesco Marigioli`](https://github.com/FrancescoMarigioli98), [`Luca Varriale`]("")
