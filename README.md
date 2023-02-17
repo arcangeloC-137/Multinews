@@ -23,7 +23,7 @@ The pipeline we propose, and that you can reproduce, is the following:
 ### Dataset Download 
 The dataset exploited are the following: 
 1. [Multi-News dataset](https://github.com/Alex-Fabbri/Multi-News)
-2. AIPubSumm, CSPubSumm, and BIOPubSumm. These datasets are not publicly available: plese refere to [this repo](https://github.com/arcangeloC-137/THExt) for further information.
+2. AIPubSumm, CSPubSumm, and BIOPubSumm. These datasets are not publicly available, so some directory folders may be created: plese refere to [this repo](https://github.com/arcangeloC-137/THExt) for further information.
 
 ### Execution Guide
 
