@@ -40,3 +40,12 @@ If the running is performed locally, please install the requirements in the file
 ```
 
 ## Pipeline Description
+
+<p>
+    <img src="https://github.com/arcangeloC-137/Multinews/blob/main/imgs/Multi-Document%20THExt%202.png" alt>
+    <em>image_caption</em>
+</p>
+
+<div align="center">
+  <img src="https://github.com/arcangeloC-137/Multinews/blob/main/imgs/Multi-Document%20THExt%202.png" alt="Alt text" title="Preprocessing pipeline" width="500" height="300">
+</div>
