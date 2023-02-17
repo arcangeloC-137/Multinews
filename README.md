@@ -41,11 +41,28 @@ If the running is performed locally, please install the requirements in the file
 
 ## Pipeline Description
 
-<p>
-    <img src="https://github.com/arcangeloC-137/Multinews/blob/main/imgs/Multi-Document%20THExt%202.png" alt>
-    <em>image_caption</em>
-</p>
+### 1. Multi-document Summarization Pipeline
+Firstly, we preprocess the input news articles using techniques such as stopword removal, sentence segmentation, and separation of articles of the same cluster, which enhances the performance of the summarization model. During this stage a tokenized unique text is created merging the texts of all the articles related to the same news. Also a new context is defined, merging the first 20\% of sentences of each article for the same cluster of news.
 
 <div align="center">
   <img src="https://github.com/arcangeloC-137/Multinews/blob/main/imgs/Multi-Document%20THExt%202.png" alt="Alt text" title="Preprocessing pipeline" width="500" height="300">
 </div>
+
+Next, we fine-tune the chosen models, BERT and LongFormer, on the Multi-News dataset, which helps obtain the optimized weights for the models. Finally, we use a fully connected layer-based regression to produce the resulting highlights for the cluster of articles.
+
+
+### 2. Context Generator Pipeline
+
+The LED model, which is an extension of the Longformer, was employed to create a new context. Specifically, the study performed an abstractive summarization of different sections of the papers, namely the abstract, introduction, and results
+
+<div align="center">
+  <img src="https://github.com/arcangeloC-137/Multinews/blob/main/imgs/Context_generation.png" alt="Alt text" title="Preprocessing pipeline" width="700" height="300">
+</div>
+
+<p>
+ 
+ Please, for further information, and to see our results, refere to the relative [`paper`](https://github.com/arcangeloC-137/Multinews/blob/main/Multi-document%20Summarization%20for%20News%20Articles%20Highlights%20Extraction.pdf).
+ 
+ ----
+ 
+ Authors: [`Matteo Berta`](https://github.com/MatteoBerta), [`Arcangelo Frigiola`](https://github.com/arcangeloC-137), [`Francesco Marigioli`](https://github.com/FrancescoMarigioli98), [`Luca Varriale`]("")
