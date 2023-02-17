@@ -1,0 +1,8 @@
+spacy
+rouge_score
+datasets==1.0.2
+transformers
+multiprocess
+py-rouge
+torch
+sentence-transformers
