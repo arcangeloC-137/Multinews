@@ -1,6 +1,6 @@
 # Multi-document Summarization for News Articles Highlights Extraction
 
-This repository contains the code for our Multi-News adaptation of paper Transformer-based Highlights Extraction - THExt, realized the Deep Natural Language Process class (2022-2023).
+This repository contains the code for our Multi-News adaptation of paper [Transformer-based Highlights Extraction from scientific papers - THExt](https://www.sciencedirect.com/science/article/abs/pii/S0950705122006931), realized for the Deep Natural Language Processing class (A.Y. 2022-2023).
 
 The extraction of highlights is a process which consists in selecting the salient sentences within the body of a test, which well summarize the meaning of the text under examination. This paper focuses on the problem of extracting highlights from news articles using transformer-based techniques. 
 Our task was to adapt THExt to another domain and extend it to Multi-Document summarization.
@@ -22,8 +22,8 @@ The pipeline we propose, and that you can reproduce, is the following:
 
 ### Dataset Download 
 The dataset exploited are the following: 
-* [Multi-News dataset](https://github.com/Alex-Fabbri/Multi-News)
-* AIPubSumm, CSPubSumm, and BIOPubSumm. These datasets are not publicly available: plese refere to [this repo](https://github.com/arcangeloC-137/THExt) for further information.
+1. [Multi-News dataset](https://github.com/Alex-Fabbri/Multi-News)
+2. AIPubSumm, CSPubSumm, and BIOPubSumm. These datasets are not publicly available: plese refere to [this repo](https://github.com/arcangeloC-137/THExt) for further information.
 
 ### Execution Guide
 
@@ -42,7 +42,7 @@ If the running is performed locally, please install the requirements in the file
 ## Pipeline Description
 
 ### 1. Multi-document Summarization Pipeline
-Firstly, we preprocess the input news articles using techniques such as stopword removal, sentence segmentation, and separation of articles of the same cluster, which enhances the performance of the summarization model. During this stage a tokenized unique text is created merging the texts of all the articles related to the same news. Also a new context is defined, merging the first 20\% of sentences of each article for the same cluster of news.
+Firstly, we preprocess the input news articles, from dataset [1], using techniques such as stopword removal, sentence segmentation, and separation of articles of the same cluster, which enhances the performance of the summarization model. During this stage a tokenized unique text is created merging the texts of all the articles related to the same news. Also a new context is defined, merging the first 20\% of sentences of each article for the same cluster of news.
 
 <div align="center">
   <img src="https://github.com/arcangeloC-137/Multinews/blob/main/imgs/Multi-Document%20THExt%202.png" alt="Alt text" title="Preprocessing pipeline" width="500" height="300">
@@ -53,7 +53,7 @@ Next, we fine-tune the chosen models, BERT and LongFormer, on the Multi-News dat
 
 ### 2. Context Generator Pipeline
 
-The LED model, which is an extension of the Longformer, was employed to create a new context. Specifically, the study performed an abstractive summarization of different sections of the papers, namely the abstract, introduction, and results
+The LED model, which is an extension of the Longformer, was employed to create a new context from the dataset [2]. Specifically, the study performed an abstractive summarization of different sections of the papers, namely the abstract, introduction, and results
 
 <div align="center">
   <img src="https://github.com/arcangeloC-137/Multinews/blob/main/imgs/Context_generation.png" alt="Alt text" title="Preprocessing pipeline" width="700" height="300">
